@@ -1,0 +1,25 @@
+Reading symbols from a.out...
+(gdb) b main
+Breakpoint 1 at 0x1239: file main.c, line 18.
+(gdb) r
+Starting program: /home/a.out 
+
+Breakpoint 1, main () at main.c:18
+18      {
+(gdb) n
+20        x=input(x1,y1);
+(gdb) n
+Enter a numbers
+4 4
+21        y=input(x1,y1);
+(gdb) n
+Enter a numbers
+22        add(x,y,&sum);
+(gdb) n
+23        output(x,y,&sum);
+(gdb) n
+24      return 0;
+(gdb) c
+Continuing.
+8[Inferior 1 (process 1271) exited normally]
+(gdb)
