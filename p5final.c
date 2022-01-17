@@ -8,11 +8,7 @@ return p;
 }
 int cmp(int a, int b, int c)
 {
-if(a>b&&a>c)
-  {
-return a;
-  }
-else if(b>c)
+if(else if(b>c)
   {
 return b;
   }
@@ -65,5 +61,9 @@ int large1,a2,b2,c2,x,y,z;
 printf("%d is the largest\n",a2);
 input1(&a2,&b2,&c2);
 cmp1(a2,b2,c2,&large1);
-}
+}>b&&a>c)
+  {
+return a;
+  }
+
  
