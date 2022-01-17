@@ -1,0 +1,31 @@
+Reading symbols from a.out...
+(gdb) b main
+Breakpoint 1 at 0x1335: file main.c, line 44.
+(gdb) r
+Starting program: /home/a.out 
+
+Breakpoint 1, main () at main.c:44
+44      {
+(gdb) n
+46          n=input_array_size();
+(gdb) n
+enter the size of array : 5
+47          int a[n];
+(gdb) n
+48          array_input(n,a);
+(gdb) n
+enter the values
+9
+8
+7
+6
+5
+49          sum=sum_n_arrays(n,a);
+(gdb) n
+50          output(n,a,sum);   
+(gdb) n
+51      }
+(gdb) c
+Continuing.
+9+8+7+6+5 is 35[Inferior 1 (process 2149) exited normally]
+(gdb)
