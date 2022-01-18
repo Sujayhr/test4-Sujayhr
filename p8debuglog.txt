@@ -1,0 +1,21 @@
+Reading symbols from a.out...
+(gdb) b main
+Breakpoint 1 at 0x1263: file main.c, line 28.
+(gdb) r
+Starting program: /home/a.out 
+
+Breakpoint 1, main () at main.c:28
+28      {
+(gdb) n
+30        n=input();
+(gdb) n
+enter the number:81
+31        result=my_sqrt(n);
+(gdb) n
+32        output(n,result);
+(gdb) n
+33      }
+(gdb) c
+Continuing.
+the square root of 81.000000 is 9.000000[Inferior 1 (process 2167) exited normally]
+(gdb) 
