@@ -1,1 +1,23 @@
- 
+Starting program: /home/a.out 
+
+Breakpoint 1, main () at main.c:43
+43      {
+(gdb) n
+45       input_two_string(a, b);
+(gdb) n
+enter the strings
+sujay
+SUJAY
+46       int result = strcmp(a, b);
+(gdb) n
+47       output(a, b, result);
+(gdb) n
+48       return 0;
+(gdb) n
+49      }
+(gdb) c
+Continuing.
+sujay is greater than SUJAY[Inferior 1 (process 351) exited normally]
+(gdb) Quit
+
+(gdb) 
