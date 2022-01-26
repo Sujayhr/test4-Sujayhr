@@ -22,7 +22,7 @@ complex input_n_complex(int n,complex c[n])
 {
  int i;
  for (i=0;i<n;i++)
- c[i]=input_complex();
+ c[i]=input_complex()
 }
 complex add(complex a,complex b)
 {
