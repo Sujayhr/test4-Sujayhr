@@ -3,14 +3,14 @@
 float input()
 {
   float n;
-  printf("enter the number:");
+  printf("enter the number");
   scanf("%f",&n);
   return n;
 }
 float my_sqrt(float n)
 {
   float root;
-  root=sqrt(n);
+  root= sqrt(n);
 }
 void output(float n,float result )
 {
@@ -19,7 +19,7 @@ void output(float n,float result )
 int main()
 {
   float n,result ;
-  n=input();
+  n =input();
   result=my_sqrt(n);
   output(n,result);
 }
