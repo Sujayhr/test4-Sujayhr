@@ -1,1 +1,35 @@
+Reading symbols from a.out...
+(gdb) b main
+Breakpoint 1 at 0x1413: file main.c, line 60.
+(gdb) r
+Starting program: /home/a.out 
 
+Breakpoint 1, main () at main.c:60
+60      {
+(gdb) n
+61       int n = get_n();
+(gdb) n
+enter the number of complex number
+2
+62       complex c[n],result;
+(gdb) n
+63       input_n_complex(n,c);
+(gdb) n
+enter the complex number
+5
+6
+enter the complex number
+6
+5
+64       result=add_n_complex(n,c);
+(gdb) n
+65       output (n,c,result);
+(gdb) n
+5.00+ 6.00i
+6.00+ 5.00i
+is 11.00 + 11.00i
+66       return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 4589) exited normally]
+(gdb) Quit
