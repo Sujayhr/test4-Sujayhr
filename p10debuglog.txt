@@ -1,29 +1,28 @@
+
 Reading symbols from a.out...
 (gdb) b main
-Breakpoint 1 at 0x12b7: file main.c, line 36.
+Breakpoint 1 at 0x12c1: file main.c, line 41.
 (gdb) r
 Starting program: /home/a.out 
 
-Breakpoint 1, main () at main.c:36
-36      {
+Breakpoint 1, main () at main.c:41
+41      {
 (gdb) n
-38      a=input(); 
+43          t1 = input();
 (gdb) n
-Enter the complex number
-4
-5
-39      b=input(); 
+Enter the Real part: 4
+Enter the Imaginary part: 6
+44          t2 = input();
 (gdb) n
-Enter the complex number
-4
-5
-40      c=add(a,b); 
+Enter the Real part: 6
+Enter the Imaginary part: 4
+45          sum = add(t1, t2);
 (gdb) n
-41      output(a,b,c);
+46          output(t1, t2, sum);
 (gdb) n
-4.00 + 5.00i + 4.00 + 5.00i is 8.00 + 10.00i
-42      }
+The sum of 4.0 + 6.0i and 6.0 + 4.0i is 10.0 + 10.0i
+47          return 0;
 (gdb) c
 Continuing.
-[Inferior 1 (process 1455) exited normally]
-(gdb) Quit
+[Inferior 1 (process 3553) exited normally]
+(gdb) 
