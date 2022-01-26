@@ -1,1 +1,29 @@
+Reading symbols from a.out...
+(gdb) b main
+Breakpoint 1 at 0x12b7: file main.c, line 36.
+(gdb) r
+Starting program: /home/a.out 
 
+Breakpoint 1, main () at main.c:36
+36      {
+(gdb) n
+38      a=input(); 
+(gdb) n
+Enter the complex number
+4
+5
+39      b=input(); 
+(gdb) n
+Enter the complex number
+4
+5
+40      c=add(a,b); 
+(gdb) n
+41      output(a,b,c);
+(gdb) n
+4.00 + 5.00i + 4.00 + 5.00i is 8.00 + 10.00i
+42      }
+(gdb) c
+Continuing.
+[Inferior 1 (process 1455) exited normally]
+(gdb) Quit
