@@ -1,31 +1,33 @@
-#include<stdio.h>
-int input();
-int add(int n);
-void output(n,sum);
+#include <stdio.h>
+float input()
+{
+float n;
+printf("Enter a number\n");
+scanf("%f", &n);
+return n;
+}
+float calculate(float n)
+{
+float temp, sqt;
+sqt=n/2;
+temp=0;
+while(sqt!=temp)
+{
+temp=sqt;
+sqt=(n/temp+temp)/2;
+}
+return sqt;
+
+}
+void output(float n, float sqt)
+{
+printf("The square root of %f is %f\n", n, sqt);
+}
 int main()
 {
-  int n,sum;
-  n=output();
-  sum=add(n);
-  output(n,sum);
-  return 0;
-}
-int input()
-{
-  print("enter the value of n:");
-  scanf("%d",&n);
-  return n;
-}
-int add(int n)
-{
-  int i,sum=0;
-  for(i=0;i<n;i++)
-  { 
-    sum=sum+i;
-  }
-  return sum;
-}
-void output(int n,int sum)
-{
-  printf("sum of %d numbers is %d",n,sum);
+float a, sqt;
+a=input();
+sqt=calculate(a);
+output(a,sqt);
+return 0;
 }
